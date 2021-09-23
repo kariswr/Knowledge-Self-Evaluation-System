@@ -23,7 +23,10 @@ In order to run this system, Prosa.ai API key is needed.
 
 Steps to run the system are as follows :
 1. Add the API key for Prosa.ai for binary classification answer extractor [at this](https://github.com/kariswr/Answer-Extraction/blob/main/src/preprocess/external_pos_ner.py#L6) and question generator [at this](https://github.com/kariswr/Question-Generator-Api/blob/master/src/preprocess/call_external_api.py#L6)
-2. Run all API needed, only 1 API for answer extracted needed to be run. the default is BERT-Joint Answer Extractor since it has better performance.
+2. Run all API needed, only 1 API for answer extracted needed to be run. The default model is BERT-Joint Answer Extractor since it has better performance.
 3. Run the web interface.
 4. Use the system through the interface. Happy Learning :)
 
+In order to use binary classification needed, before step 2, change the url const **baseUrlExtractAnswerBertJoint** used in interface [at this](https://github.com/kariswr/ES-Front-End/blob/master/src/components/Home.js#L38) to **baseUrlExtractAnswerClassification**.
+
+How to run the API are explained at each repository. 
